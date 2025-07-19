@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+ <script>
+        function generate() {
+            let numbers = [];
+            while(numbers.length < 9) {
+                let num = Math.floor(Math.random() * 15);
+                if(!numbers.includes(num)) numbers.push(num);
+            }
+            numbers.sort((a,b) => a-b);
+            document.getElementById('output').textContent = numbers.join(', ');
+        }
+    </script>
+
+<body>
+    <button type="submit" onclick="generate()">生成随机数</button>
+    <p id="output"></p>
+</body>
+</html>
