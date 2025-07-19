@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>漫步时尚广场-美食栏目</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    .focusBox {
+        position: absolute;
+        top: 490px;
+        width: 120px;
+        left: 50%;
+        margin-left: -60px;
+        list-style: none;
+    }
+    
+    .focusBox li {
+        float: left;
+        margin-right: 10px;
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        background: gray;
+        cursor: pointer;
+    }
+    
+    .focusBox li.cur {
+        background: #f60;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+    }
+    </style>
+</head>
+<body>
+<!--顶部区域 start-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="top_line">
+  <tr>
+    <td bgcolor="#f7f7f7" ><table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td  class="padding-top"><img src="images/star.jpg">收藏 | HI，欢迎来订餐 ！<a href="../manageadmin/login.html" class="orange">[请登录]</a> <a href="../register/register.html"  class="orange"> [免费注册]</a></td>
+          <td align="right" > 客户服务<img src="images/arrow.gif">&nbsp;网站导航<img src="images/arrow.gif">&nbsp;<span class="droparrow"><span class="shopcart"></span>我的订餐车<span class="orange">0</span>份<img src="images/arrow.gif" /></span></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<!--顶部区域 end--> 
+<!--logo和banner start-->
+<table width="1200" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td height="95"><a href="../index.html"><img src="images/logo.jpg"></a></td>
+    <td align="right"><img src="images/banner.jpg"></td>
+  </tr>
+</table>
+<!--logo和banner  end--> 
+<!--菜单导航 start-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ce2626" >
+  <tr>
+    <td><table width="1200" border="0" cellspacing="0" cellpadding="4" align="center" class="nav_font16">
+        <tr>
+          <td width="200">&nbsp;</td>
+          <td width="80" align="center" class="nav_active"><a href="foodIndex.html" class="white">首页</a></td>
+          <td width="100" align="center"><a href="foodShow.html"  class="white">最新推荐</a></td>
+          <td width="100" align="center">热门美食</td>
+          <td width="100" align="center">特色套餐</td>
+          <td width="80" align="center">团购</td>
+          <td width="100" align="center">限时抢购</td>
+          <td width="100" align="center">促销打折</td>
+          <td width="200" align="center">&nbsp;</td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<!--菜单导航 end--> 
+<!--中间部分 start-->
+<table width="1200" border="0" align="center" cellpadding="0" cellspacing="0" class="padding-top">
+  <tr>
+    <td width="220" valign="top" ><!--美食分类 start-->
+      
+      <table width="100%" border="0" cellspacing="1" cellpadding="0"  class="table1" bgcolor="#e5e4e1">
+        <tr>
+          <th >中餐</th>
+        </tr>
+        <tr>
+          <td ><span class="red_dot"></span><a href="#" >川菜</a><img src="images/arrow_r.jpg"  align="right" ></td>
+        </tr>
+        <tr>
+          <td ><span class="red_dot"></span>粤菜<img src="images/arrow_r.jpg"  align="right"></td>
+        </tr>
+        <tr>
+          <td ><span class="red_dot"></span>鲁菜<img src="images/arrow_r.jpg"  align="right"></td>
+        </tr>
+        <tr>
+          <th>西餐</th>
+        </tr>
+        <tr>
+          <td ><span class="red_dot"></span>意大利餐<img src="images/arrow_r.jpg"  align="right"></td>
+        </tr>
+        <tr>
+          <td ><span class="red_dot"></span>法国餐<img src="images/arrow_r.jpg"  align="right"></td>
+        </tr>
+        <tr>
+          <th>快餐</th>
+        </tr>
+        <tr>
+          <td ><span class="red_dot"></span>汉堡薯条<img src="images/arrow_r.jpg"  align="right"></td>
+        </tr>
+        <tr>
+          <td ><span class="red_dot"></span>披萨<img src="images/arrow_r.jpg"  align="right"></td>
+        </tr>
+        <tr>
+          <th>甜品</th>
+        </tr>
+        <tr>
+          <td ><span class="red_dot"></span>蛋糕<img src="images/arrow_r.jpg"  align="right"></td>
+        </tr>
+        <tr>
+          <td ><span class="red_dot"></span>冰淇淋<img src="images/arrow_r.jpg"  align="right"></td>
+        </tr>
+      </table>
+      
+      <!--美食分类end--></td>
+    <td width="716" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" valign="top">
+                <!--焦点图 start--> 
+                  <img src="images/food/pic1.jpg" width="690" height="350" id="focusImg"> 
+                   <ul class="focusBox">
+                            <li onclick="showPic(1);"></li>
+                            <li onclick="showPic(2);"></li>
+                            <li onclick="showPic(3);"></li>
+                        </ul>
+                  <!--焦点图 end-->
+                  </td>
+                 
+                <td valign="top">
+                <!--右侧start-->
+                  
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><!--公告 start-->
+                        
+                        <table width="100%" border="0" cellspacing="1" cellpadding="0" bgcolor="#eeeeee">
+                          <tr>
+                            <td height="35" bgcolor="#f7f7f7" class="notice_title">公告</td>
+                          </tr>
+                          <tr>
+                            <td bgcolor="#ffffff"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" class="padding-top">
+                                <tr>
+                                  <td height="30" class="notice_text"><a href="#"><span class="gray_dot"></span>新餐厅入驻</a></td>
+                                </tr>
+                                <tr>
+                                  <td height="30" class="notice_text"><span class="gray_dot"></span>本周美食特惠活动</td>
+                                </tr>
+                                <tr>
+                                  <td height="30" class="notice_text"><span class="gray_dot"></span>会员专享折扣更新</td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table>
+                        
+                        <!--公告 end--></td>
+                    </tr>
+                    <tr>
+                      <td height="8"></td>
+                    </tr>
+                    <tr>
+                      <td><!--餐厅推荐区 start-->
+                        
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f7f7f7">
+                          <tr>
+                            <td align="center"><img src="images/food/link1.gif" width="80" height="35"></td>
+                            <td align="center"><img src="images/food/link2.gif" width="80" height="35"></td>
+                            <td align="center"><img src="images/food/link3.gif" width="80" height="35"></td>
+                          </tr>
+                          <tr>
+                            <td align="center"><img src="images/food/link4.gif" width="80" height="35"></td>
+                            <td align="center"><img src="images/food/link7.jpg" width="90" height="45" /></td>
+                            <td align="center"><img src="images/food/link6.jpg" width="90" height="45"></td>
+                          </tr>
+                          <tr>
+                            <td align="center"><img src="images/food/link5.jpg" width="90" height="45" /></td>
+                            <td align="center"><img src="images/food/link8.jpg" width="90" height="45"></td>
+                            <td align="center"><img src="images/food/link9.jpg" width="90" height="45"></td>
+                          </tr>
+                        </table>
+                        
+                        <!--餐厅推荐区 end--></td>
+                    </tr>
+                  </table>
+                  
+                  <!-- 右侧end--></td>
+              </tr>
+            </table></td>
+        </tr>
+        <!--美食分类区start-->
+        <tr>
+          <td><table width="99%" border="0" align="right" cellpadding="0" cellspacing="1" bgcolor="#dddddd">
+              <tr>
+                <td width="20%" bgcolor="#ffffff"><table width="90%" border="0" align="center" cellpadding="3" cellspacing="0">
+                    <tr>
+                      <td><img src="images/food/pro1.jpg" width="65" height="65"></td>
+                      <td class="font14"> 热门美食<br/>
+                        不容错过</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">宫保鸡丁&nbsp;&nbsp;&nbsp;&nbsp;
+                        牛排&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                  </table></td>
+                <td width="20%" bgcolor="#ffffff"><table width="90%" border="0" align="center" cellpadding="3" cellspacing="0">
+                    <tr>
+                      <td><img src="images/food/pro2.jpg" width="65" height="65"></td>
+                      <td class="font14"> 特惠套餐<br/>
+                        超值享受</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">双人套餐&nbsp;&nbsp;&nbsp;&nbsp;
+                        家庭套餐&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<!--中间部分 end--> 
+</body>
+</html>
